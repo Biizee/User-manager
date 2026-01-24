@@ -40,7 +40,7 @@ def update_user():
             if new_role:
                 role = Roles.objects.get(name = new_role)
                 user.role = role
-                user.save()
+        user.save()
         print("\nUser updated succesfully!")
     except ObjectDoesNotExist:
         print(f"\nUser or role doesn't exists. Try again!")
